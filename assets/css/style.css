@@ -65,6 +65,7 @@ header {
     font-family: "Helvetica Neue", Helvetica, Arial, SansSerif;
     font-size: 1rem;
 }
+/*links social media */
 .social {
     display: flex;
     align-items: center;
@@ -73,4 +74,42 @@ header {
 }
 .social li {
     padding: 0 15px;
+}
+
+.open-menu {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: black;
+        height: 100%;
+        overflow-y;
+        auto;
+        opacity: 1;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    .open-menu {
+        display: block;
+        float: right;
+        width: 72px;
+        height: 62px;
+        cursor: pointer;
+            }
+
+
 }
