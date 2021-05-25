@@ -25,7 +25,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 8rem;
     background-color: black;
 }
 .nav-logo {
@@ -42,12 +42,12 @@ a {
 
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 30px;
+    height: 2px;
+    margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #ffffff;
 }
 
 .nav-menu {
@@ -85,27 +85,28 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-    .nav-menu {
+   .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #222222;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-                0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .nav-menu.active {
+
+      .nav-menu.active {
         left: 0;
     }
 
     .nav-item {
         margin: 2.5rem 0;
     }
+
 
     .hamburger {
         display: block;
