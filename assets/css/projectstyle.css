@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    /*background-color: #dddddd;*/
+    background-color: #dddddd;
 }
 
 li {
@@ -93,10 +93,12 @@ a {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #DCDCDC;
+    padding: 77px;
 }
 
 .intro {
     display:block;
+    /*margin-bottom: 25px;*/
 }
 
 .project-title {
@@ -113,12 +115,11 @@ a {
     font-size: 1.5rem;
     line-height: 1.7;
     max-width: 300px;
-    margin: 0 auto;
     text-align: left;
     color: #777777;
     overflow: auto;
     font-weight: normal;
-    margin-bottom: 0.8rem;
+    margin: 0 auto;
 }
 
 .project-text {
@@ -133,37 +134,86 @@ a {
 
 }
 .project-img {
-    height: 600px;
+    height: 300px;
     position: relative;
-    margin: 15px 50px 0 50px;
-}
-
-.works {
-    background-color: #fafafa;
-    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.1);
-    margin-top: 5px;
-    border-bottom: #dddddd;
-
+    margin: 15px 50px 0 130px;
 }
 
 /*projects gallery*/
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(6,330px);
-}
-.grid-item {
+
+#thumbs {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 4px;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding-top: 92px;
+    background-color: #fafafa;;
+    padding: 77px;
+    border-bottom: solid 1px #dddddd;
+}
+
+.works {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    border: solid 1px #777777;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+    opacity:1;
+    }
+
+.description {
+    color: black;
+    margin: 17px 17px;
+    font-weight: normal;
+}
+
+h4{
+    margin-bottom: 5px;
 }
 .grid-item:hover {
     filter:opacity(0.9);
     transform: scale(1.04);
 }
+
+.photos {
+    border-radius: 4%;
+    max-width:628px;
+    padding: 9px;
+}
+/*footer*/
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    background-color: #f5f5f5;
+    margin-top: 5px;
+}
+footer a {
+    color: #777777;
+    text-decoration: none;
+    font-weight: 380;
+}
+.footer-nav-link{
+    font-size: 1rem;
+    font-weight: 380;
+    color: #777777;
+}
+
+.nav-menu-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    z-index: 2;
+}
+
+.nav-item-footer{
+    margin-left: 5rem;
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {

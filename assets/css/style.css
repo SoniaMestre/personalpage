@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    /*background-color: #dddddd;*/
+    background-color: #dddddd;
 }
 
 li {
@@ -84,7 +84,7 @@ a {
 .nav-link:hover{
     color: #C0C0C0;
 }
-
+/*main*/
 .profile {
     text-align: center;
     background-color: white;
@@ -145,19 +145,9 @@ a {
     position: relative;
     margin: 15px 50px 0 50px;
 }
-
-.works {
-    background-color: #fafafa;
-    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.1);
-    margin-top: 5px;
-    border-bottom: #dddddd;
-
-}
-
 h3 {
     display: flex;
     flex-direction: row;
-    background-color: white;
     margin-top: 5rem;
     color: #777777;
     text-transform: uppercase;
@@ -179,6 +169,84 @@ h3:after {
     margin-left: 10px
 }
 
+
+/*latest projects*/
+.gallery {
+    background-color: #fafafa;
+}
+#thumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding-top: 92px;
+    background-color: #fafafa;
+    padding: 77px;
+    border-bottom: solid 1px #dddddd;
+    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.1);
+}
+
+.works {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+    opacity:1;
+}
+
+.description {
+    color: black;
+    margin: 17px 17px;
+    font-weight: normal;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+.grid-item:hover {
+    filter:opacity(0.9);
+    transform: scale(1.04);
+}
+.photos {
+    border-radius: 4%;
+    max-width:628px;
+    padding: 9px;
+}
+/*footer*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    background-color: #f5f5f5;
+    margin-top: 5px;
+}
+footer a {
+    color: #777777;
+    text-decoration: none;
+    font-weight: 380;
+}
+.footer-nav-link{
+    font-size: 1rem;
+    font-weight: 380;
+    color: #777777;
+}
+
+.nav-menu-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    z-index: 2;
+}
+
+.nav-item-footer{
+    margin-left: 5rem;
+}
 @media only screen and (max-width: 768px) {
    .nav-menu {
         position: fixed;
@@ -203,6 +271,7 @@ h3:after {
         cursor: pointer;
     }
 }
+
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
