@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background-color: #dddddd;
-}
+    background-color: #ffffff;
+   }
 
 li {
     list-style: none;
@@ -84,118 +84,73 @@ a {
 .nav-link:hover{
     color: #C0C0C0;
 }
-/*main Sokjo*/
-.Sokjoprojectintro {
+
+
+/* Header/Blog Title */
+.header2 {
+    padding: 30px;
+    font-size: 40px;
     text-align: center;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #DCDCDC;
-    padding: 8rem;
+    background: white;
 }
 
-.sokjointro {
-    display:block;
-   }
-
-.sokjo-title {
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-    letter-spacing: -0.06em;
-    color: #111111;
-    text-rendering: optimizeLegibility;
-    font-weight: bold;
-    font-size: 5rem;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: initial;
+    width: 75%;
+    margin: auto;
 }
 
-.sokjo-subtitle {
-    font-size: 1.5rem;
+/* Fake image */
+.img {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.blogtitle {
+    font-size: 3rem;
     line-height: 1.7;
-    max-width: 300px;
+    text-align: center;
+    color: #777777;
+    overflow: auto;
+    font-weight: lighter;
+    margin: 1rem auto;
+}
+.titletextblog {
+    font-size: 2.5rem;
+    line-height: 1.7;
     text-align: left;
     color: #777777;
     overflow: auto;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
-
-.sokjo-text {
+.textblog {
     font-size: 1rem;
     line-height: 1.7;
-    max-width: 300px;
     margin: 0 auto;
     text-align: left;
     color: #777777;
     overflow: auto;
     font-weight: normal;
-
-}
-.Sokjo-main-image {
-    height: 300px;
-    position: relative;
-    margin: 15px 50px 0 130px;
 }
 
-/*showroom*/
-.Sokjo-examples {
-    background-color: #fafafa;
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.Sokjo06 {
-    margin: 6rem auto 6.4rem auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-.textcontainer {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-left: 15rem;
-    width: 50%;
-    line-height: 1.7;
 
-
-}
-.titleexamples {
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-    letter-spacing: -0.06em;
-    color: #111111;
-    text-rendering: optimizeLegibility;
-    font-weight: normal;
-    font-size: 3rem;
-}
-.textexamples {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    letter-spacing: -0.06em;
-}
-.Sokjoprojectsuccess {
-    background-color: #ffffff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #DCDCDC;
-    padding: 3rem;
-    margin-top:3rem;
-}
-.Sokjo07 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    position: relative;
-    margin: 15px 50px 0 130px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-}*/
 /*footer*/
 
 #footer {
@@ -229,6 +184,13 @@ footer a {
     margin-left: 5rem;
 }
 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;

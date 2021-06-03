@@ -117,8 +117,8 @@ a {
     text-align: left;
     color: #777777;
     overflow: auto;
-    font-weight: normal;
-    margin: 0 auto;
+    font-weight: lighter;
+    margin: 0 auto 1rem auto;
 }
 
 .project-text {
@@ -208,6 +208,67 @@ h4{
     max-width:200px;
     padding: 9px;
 }
+
+/*skills*/
+.brain {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.entrepreneur {
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    color: #111111;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.skills {
+    text-align: center;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 5rem;
+}
+.part-entrepreneur {
+    margin-bottom: 0.8rem;
+    margin-left: 5px;
+    line-height: 2;
+    text-rendering: optimizeLegibility;
+    text-align: left;
+}
+.entrepreneur-title {
+    display:block;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.entrepreneur-list {
+    font-size: 1.2rem;
+    line-height: 2.3;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: auto;
+    font-weight: lighter;
+    display:block;
+}
+
+.face-img {
+    height: auto;
+    width:35rem;
+    position: relative;
+    margin: 15px 50px 0 50px;
+}
+
 /*footer*/
 
 #footer {
@@ -240,6 +301,7 @@ footer a {
 .nav-item-footer{
     margin-left: 5rem;
 }
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
