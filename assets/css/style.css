@@ -26,7 +26,7 @@ a {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 8rem;
     background-color: black;
@@ -38,6 +38,7 @@ a {
     float: left;
     background-color: white;
     border-radius: 50%;
+    margin-right: 11rem;
 }
 .hamburger {
     display: none;
@@ -66,18 +67,18 @@ a {
 }
 .nav-social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 11rem;
 }
 
 .social-item {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: lighter;
     color: #ffffff;
 }
 
@@ -125,19 +126,19 @@ a {
     font-size: 1.2rem;
     line-height: 1.3;
     max-width: 250px;
-    margin: 0 auto;
     text-align: left;
     color: #777777;
     overflow: auto;
+    font-weight: lighter;
     }
 .profile-details2 {
     font-size: 1.2rem;
     line-height: 1.3;
     max-width: 300px;
-    margin: 0 auto;
     text-align: left;
     color: #777777;
     overflow: auto;
+    font-weight: lighter;
 }
 
 .face-img {
@@ -148,12 +149,14 @@ a {
 h3 {
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
-    color: #777777;
+    margin: 0.2rem 0 0 3rem;
+    color: #757575;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: normal;
     letter-spacing: 0.2rem;
+    padding-top: 5rem;
+    width: 92%;
 }
 h3:before, h3:after{
     content: "";
@@ -163,10 +166,10 @@ h3:before, h3:after{
 
 }
 h3:before {
-    margin-right: 10px
+   margin-right: 10px;
 }
 h3:after {
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 
@@ -179,12 +182,9 @@ h3:after {
     justify-content: center;
     align-items: center;
     list-style: none;
-    position: relative;
-    padding-top: 92px;
+    padding: 0 92px 100px 92px;
     background-color: #fafafa;
-    padding: 77px;
     border-bottom: solid 1px #dddddd;
-    box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.1);
 }
 
 .works {
@@ -224,6 +224,7 @@ h4{
     padding: 1rem 8rem;
     background-color: #f5f5f5;
     margin-top: 5px;
+    height: 6rem;
 }
 footer a {
     color: #777777;
