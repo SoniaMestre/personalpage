@@ -33,12 +33,14 @@ a {
 }
 .nav-logo {
     background-repeat: no-repeat;
-    background-position: 0px -63px;
+    background-position: 0 -63px;
     display: block;
     float: left;
     background-color: white;
     border-radius: 50%;
     margin-right: 11rem;
+    width: 3rem;
+    height: 3rem;
 }
 .hamburger {
     display: none;
@@ -187,7 +189,7 @@ h3:before, h3:after{
     background-color: white;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 17px;
     opacity:1;
 }
@@ -212,6 +214,33 @@ h4{
 }
 /*footer*/
 
+#scrollToTopBtn {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 5rem;
+    width: 5rem;
+    box-shadow: 0 -1px 1px 0 #dddddd;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    margin-top: -6rem;
+
+}
+#scrollToTopBtn:hover {
+cursor: pointer;
+    margin-bottom: 8px;
+}
+
 
 #footer {
     display: flex;
@@ -219,7 +248,7 @@ h4{
     align-items: center;
     padding: 1rem 8rem;
     background-color: #f5f5f5;
-    margin-top: 5px;
+    margin-top: 2px;
     height: 6rem;
 }
 footer a {
@@ -244,6 +273,26 @@ footer a {
 .nav-item-footer{
     margin-left: 5rem;
 }
+
+
+/* Mobile styles go first, without media queries. */
+
+@media only screen and (min-width: 321px) {
+    /* Larger mobile styles (wider than 320 pixels) */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Tablet styles (wider than 600 pixels) */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Large laptop styles (wider than 1024 pixels) */
+}
+
+@media only screen and (min-width: 1140px) {
+    /* Desktop styles (wider than 1140 pixels) */
+}
+
 @media only screen and (max-width: 768px) {
    .nav-menu {
         position: fixed;
@@ -287,7 +336,7 @@ footer a {
     font-size: 1.5rem;
 }*/
 
-@media (min-width: 767px) {
+@media (min-width: 767px){}
     /*.profile-details {
         font-size: 14px;
         line-height: 1.3;
